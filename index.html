@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Portfólio Profissional</title>
+
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+            <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+            
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        </head>
+        <body>
+
+            <header>
+                <a href="#" class="logo"><img src="img/logo.png"></a>
+                <div class="bx bx-menu" id="menu-icon"></div>
+
+                <ul class="navlist">
+                    <li><a href="#inicio">Inicio</a> </li>
+                    <li><a href="#sobre">Sobre</a> </li>
+                    <li><a href="#projetos">Projetos</a> </li>
+                    <li><a href="#habilidades">Habilidades</a> </li>
+                    <li><a href="#contatos">Contatos</a> </li>
+                </ul>
+
+            </header>
+
+            <section class="inicio" id="inicio">
+                <div class="principal-texto">
+                    <h3>Olá meu nome é </h3>
+                    <h1>Carlos Eduardo</h1>
+                    <h4>Desenvolvedor Full-stack - Desenvolvedor Android Nativo - Cientista de Dados</h4>
+                    <a href="https://github.com/carloscels" class="btn">Meus trabalhos</a>
+
+                </div>
+            </section>
+
+            <section class="sobre" id="sobre">
+                <div class="sobre-img">
+                    <img src="img/mafioso.png">
+                </div>
+                <div class="sobre-texto">
+                    <h2>Sobre mim</h2>
+                    <h5>Um desenvolvedor em <span> ascensão </span></h5>
+                    <p>Sou um desenvolvedor full-stack com habilidades em android nativo e ciencias de dados. Tenho trabalhado em vários projetos pessoais para desenvolver minhas habilidades e demonstrar minha paixão pela programação.</p>
+                    <a href="#contatos" class="btn">Contatos</a>
+
+                </div>
+            </section>
+
+            <section class="projetos" id="projetos">
+                <div class="projetos-texto">
+                    <h2>Projetos </h2>
+                    <h4>Principais projetos</h4>
+                </div>
+
+                <div class="projetos-item">
+                    <div class="projetos-box">
+                        <i class='bx bx-code-alt' ></i>
+                        <h3>full-stack</h3>
+                        <p>Um sistema de login full-stack, feito o front-end em html, css, javascript, typescript e angular 10. e o back-end feito em Java e SpringBoot. </p>
+                        <a href="#" class="s-btnn">Veja mais</a>
+                    </div>
+                
+                    <div class="projetos-box">
+                        <i class='bx bx-mobile' ></i>
+                        <h3>mobile</h3>
+                        <p>aplicativo feito em Java no Android Studio, um app semelhante ao Organizze, onde vc pode organizar suas rendas e suas despesas no calendario.</p>
+                        <a href="https://github.com/carloscels/OrganizzeClone" class="s-btnn">Veja mais</a>
+                    </div>
+          
+                    <div class="projetos-box">
+                        <i class='bx bx-data' ></i>
+                        <h3>dados</h3>
+                        <p>Um projeto analise e faz o tratamento de 5 açoes da bolsa, onde é feito as taxas de retorno, calculos de risco, simulações, previsões e classificações</p>
+                        <a href="https://colab.research.google.com/drive/1WRgyHQUmE0YWC35kBX3VqCnlJRibhznJ" class="s-btnn">Veja mais</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="habilidades" id="habilidades">
+                <h2>Habilidades</h2>
+                <div class="habilidades-item">
+                    <div class="habilidades-box"  onclick="mudarconteudo()" >
+                        <h3>full-stack</h3>
+                        <i class='bx bx-code-alt' ></i>
+                        
+                    </div>
+
+                    <div class="habilidades-box" onclick="mudarconteudo2()">
+                        <h3>Android</h3>
+                        <i class='bx bx-mobile'></i>
+                    </div>
+
+                    <div class="habilidades-box"  onclick="mudarconteudo3()">
+                        <h3>Dados</h3>
+                        <i class='bx bx-data' ></i>
+
+                    </div>
+                
+                    <div class="habilidades-principal">
+                        <h3 id="conteudo">Click nas imagens</h3>
+                        <p id="conteudo2">Para descobrir as habilidade de cada.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contatos" id="contatos">
+                <h3>Carlos Eduardo</h3>
+                <p>Gostaria de expressar minha sincera gratidão pela visita ao meu portfólio. Agradeço por explorar minhas habilidades e projetos. Obrigado pela visita e espero que possamos conversar em breve.</p>
+                <p>Email:carlos.cels.1999@gmail.com</p>
+                <div class="contatos-icons">
+                    <a href="https://www.linkedin.com/in/carlos-eduardo-l%C3%A9o-santos-6b7890170/"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/carloscels"><i class='bx bxl-github'></i></a>
+                    <a href="https://wa.me/5516992852666"><i class='bx bxl-whatsapp'></i></a>
+                </div>
+            </section>
+            <script src="js/script.js"></script>
+
+        </body>
+    </html>
