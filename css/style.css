@@ -37,7 +37,7 @@ header{
     align-items: center;
     justify-content: space-between;
     background: transparent;
-    padding: 28px 11%;
+    padding: 20px 11%;
     border-bottom: 1px solid transparent;
     transition: all ease .50s;
 }
@@ -58,13 +58,17 @@ header{
 .navlist a:hover{
     color: var(--main-color);
 }
-#menu-icon{
-    font-size: 42px;
-    color: var(--text-color);
-    z-index: 10001;
-    cursor: pointer;
+.menuIcon {
     display: none;
-
+    cursor: pointer;
+  }
+  
+.menuIcon div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
 }
 section{
     padding: 120px 19% 100px;
@@ -246,12 +250,9 @@ header.sticky{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(12px,auto));
     align-items: center;
-    margin-top: 40px;
     gap: 1rem;
-    display: flex;
-    align-items: center;
     text-align: center;
-    gap: 2rem;
+    margin-top: 4rem;
 }
 .habilidades-box{
     padding: 30px 25px;
@@ -284,22 +285,16 @@ header.sticky{
     margin-bottom: 15px;
 }
 .contatos{
-    padding: 80px 19% 70px;
-    background: var(--bg-color);
+    padding: 20px 19% 70px;
+    background: var(--secont-bg-color);
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
 }
 .contatos h3{
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
-    margin-bottom: 5px;
-}
-.contatos p{
-    color: var(--other-color);
-    font-size: var(--p-font);
-    line-height: 20px;
     margin-bottom: 15px;
 }
 .contatos i{
@@ -321,3 +316,116 @@ header.sticky{
     background: transparent;
     border: 2px solid var(--main-color);
 }
+
+.agradecimentos {
+    padding: 50px 19% 70px;
+    background: var(--bg-color);
+    border-top: 1px solid #4e5055;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.agradecimentos h4{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.agradecimentos p{
+    color: var(--other-color);
+    font-size: var(--p-font);
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+
+@media(max-width:1200px){
+    .home{
+        min-height: 90vh;
+    }
+    .navlist a{
+        margin: 0 20px;
+    }
+    :root{
+        --h1-font: 5rem;
+        --h2-font: 3rem;
+        --h3-font: 2rem;
+        --p-font: 1rem;
+    }
+}
+@media(max-width:1060px){
+    .sobre{
+        grid-template-columns: 1fr;
+    }
+    .sobre-img{
+        text-align: center;
+        order: 2;
+    }
+    .sobre-img img{
+        max-width: 100%;
+        width: 300px;
+        height: auto;
+    }
+    .projetos-item{
+        grid-template-columns: repeat(auto-fit,minmax(150px,auto));
+    }
+    .habilidades-item{
+        grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    }
+    .contatos{
+        grid-template-columns: 1fr;
+    }
+   
+}
+@media(max-width:870px){
+    .body{
+        overflow-x: hidden;
+    }
+    .menuIcon{
+        display: block;        
+    }
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 30%;
+        grid-template : auto;
+        display: flex;
+        flex-direction: column;
+        background: #000;
+        padding: 20px 0;
+        text-align: left;
+        transform: translateX(100%);
+    }
+    .navlist a{
+        display: block;
+        font-size: 22px;
+        padding: 12px 0;
+    }
+    .navlist.active{
+        transform: translateX(0%);
+        transition: all .50s ease;
+        border: 1px solid #4e5055;
+    }  
+}
+@media(max-width:600px){ 
+    .navlist{
+        width: 40%; 
+    }
+} 
+@media(max-width:450px){ 
+    .navlist{
+        width: 50%; 
+    }
+} 
+@media(max-width:350px){ 
+    .navlist{
+        width: 60%; 
+    }
+} 
+@media(max-width:260px){ 
+    .navlist{
+        width: 80%; 
+    }
+} 
